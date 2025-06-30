@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  retool2api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./retool.json:/app/retool.json:ro
+      - ./client_api_keys.json:/app/client_api_keys.json:ro
+    environment:
+      - DEBUG_MODE=${DEBUG_MODE:-false}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/models')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3 
