@@ -29,7 +29,7 @@
 
 ```bash
 # 克隆项目
-git clone <your-repo-url>
+git clone https://github.com/oDaiSuno/retool2API.git
 cd retool2API
 
 # 启动服务
@@ -171,4 +171,5 @@ retool2API/
 
 ## ✨ 用star助力本项目
 
+[![Star History Chart](https://api.star-history.com/svg?repos=oDaiSuno/retool2API&type=Date)](https://www.star-history.com/#oDaiSuno/retool2API&Date)
 
