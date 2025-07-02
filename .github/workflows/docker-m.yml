@@ -32,4 +32,4 @@ jobs:
           context: .
           push: true
           platforms: linux/arm64
-          tags: mimimimimimimiiii/retool2API:latest
+          tags: mimimimimimimiiii/retool2:latest
